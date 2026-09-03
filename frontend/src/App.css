@@ -1,0 +1,441 @@
+body {
+  margin: 0;
+  background: #ccadcd;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+.landingPageContainer {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f4f8ff 0%, #e6bfec 40%, #b45fc6 100%);
+  color: #0f172a;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  padding-bottom: 40px;
+}
+
+.landingPageContainer nav {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(6px);
+}
+
+.landingPageContainer nav h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  margin: 0;
+  color: #111827;
+}
+
+.landingPageContainer nav .navlist {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.landingPageContainer nav .navlist p,
+.landingPageContainer nav .navlist div p {
+  margin: 0;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: background 180ms ease, color 180ms ease;
+  color: #1f2937;
+}
+
+.landingPageContainer nav .navlist p:hover {
+  background: rgba(244, 156, 238, 0.05);
+}
+
+.landingMainContainer {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 24px auto 0 auto;
+}
+
+.landingMainContainer > div:nth-child(1) {
+  font-size: 2rem;
+  max-width: 52%;
+}
+
+.landingMainContainer > div:nth-child(1) h1 {
+  font-size: 2.6rem;
+  line-height: 1.05;
+  margin: 0 0 12px 0;
+  color: #0f172a;
+}
+
+.landingMainContainer > div:nth-child(1) p {
+  color: rgba(15, 23, 42, 0.74);
+  margin-bottom: 18px;
+  font-size: 1.05rem;
+}
+
+.ctaButton {
+  display: inline-block;
+  background: linear-gradient(90deg, #ff9839, #ff6a3d);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 12px 24px rgba(255, 122, 61, 0.18);
+}
+
+.landingMainContainer > div:nth-child(2) img {
+  max-height: 60vh;
+  width: auto;
+  border-radius: 16px;
+  box-shadow: 0 12px 34px rgba(58, 29, 58, 0.12);
+}
+
+.navHeader h2 {
+  color: #0f172a;
+}
+
+.navlist p {
+  cursor: pointer;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 28px;
+  background: rgba(241, 157, 238, 0.8);
+  border-bottom: 1px solid rgba(61, 25, 64, 0.08);
+  backdrop-filter: blur(8px);
+  color: #111827;
+}
+
+.navBar h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #111827;
+}
+
+.navBarActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navBarActions .historyLink {
+  display: inline-flex;
+  align-items: center;
+  color: #1f2937;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+.homePage {
+  min-height: 100vh;
+  background: linear-gradient(180deg,#f4f8ff 0%, #e6bfec 40%, #b45fc6 100%);
+  color: #111827;
+}
+
+.meetContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 90px);
+  padding: 40px 32px 60px;
+  gap: 32px;
+}
+
+.leftPanel {
+  flex: 1.1;
+}
+
+.leftPanel > div {
+  max-width: 560px;
+}
+
+.leftPanel h2 {
+  font-size: clamp(2.3rem, 4vw, 4rem);
+  line-height: 1.05;
+  margin: 0 0 24px;
+  color: #111827;
+}
+
+.leftPanel p {
+  color: rgba(31, 41, 55, 0.8);
+  font-size: 1.08rem;
+  margin-bottom: 24px;
+}
+
+.joinActions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.joinActions .MuiOutlinedInput-root {
+  background: rgba(236, 155, 245, 0.8);
+  border-radius: 12px;
+}
+
+.joinActions .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(49, 18, 43, 0.18);
+}
+
+.joinActions .MuiFormLabel-root {
+  color: rgba(17, 24, 39, 0.7);
+}
+
+.joinActions .MuiInputBase-input {
+  color: #111827;
+}
+
+.joinActions .MuiButton-root {
+  background: linear-gradient(90deg, #ff9839, #ff6a3d);
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-weight: 700;
+}
+
+.rightPanel {
+  flex: 0.9;
+  display: flex;
+  justify-content: center;
+}
+
+.rightPanel > img {
+  width: min(420px, 100%);
+  height: auto;
+  border-radius: 28px;
+  box-shadow: 0 28px 52px rgba(31, 41, 55, 0.12);
+}
+
+.historyPage {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f4f8ff 0%, #e6bfec 40%, #b45fc6 100%);
+  color: #111827;
+  padding: 28px 24px 60px;
+}
+
+.historyHeader {
+  max-width: 1200px;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.historyHeader h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #111827;
+}
+
+.historyList {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 18px;
+}
+
+.historyCard {
+  background: rgba(235, 172, 243, 0.8);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 18px;
+  padding: 20px 22px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.historyCard p {
+  margin: 0 0 10px;
+  color: rgba(17, 24, 39, 0.8);
+}
+
+.historyCard strong {
+  color: #111827;
+}
+
+.emptyHistory {
+  max-width: 1100px;
+  margin: 30px auto 0;
+  background: rgba(247, 190, 241, 0.8);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 18px;
+  padding: 26px;
+  text-align: center;
+  color: rgba(17, 24, 39, 0.8);
+}
+
+.authPage {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f4f8ff 0%, #e6bfec 40%, #b45fc6 100%);
+}
+
+.authBrand {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  letter-spacing: 0.18rem;
+  text-transform: uppercase;
+  color: #ff9839;
+  font-weight: 700;
+}
+
+.authPanel {
+  background: rgba(230, 177, 244, 0.95) !important;
+  border: 1px solid rgba(15, 23, 42, 0.08) !important;
+  color: #111827 !important;
+}
+
+.authToggle {
+  background: rgba(177, 188, 219, 0.04);
+  border-radius: 12px;
+  padding: 6px;
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.authToggle button {
+  color: #111827;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.authForm .MuiInputBase-root {
+  background: rgba(248, 250, 252, 0.9);
+  border-radius: 12px;
+}
+
+.authForm .MuiInputLabel-root,
+.authForm .MuiFormLabel-root,
+.authForm .MuiInputBase-input,
+.authForm .MuiOutlinedInput-input,
+.authForm .MuiInputBase-root {
+  color: #111827 !important;
+}
+
+.authForm .MuiInputLabel-root.Mui-focused,
+.authForm .MuiFormLabel-root.Mui-focused {
+  color: #ff9839 !important;
+}
+
+.authForm .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(15, 23, 42, 0.16) !important;
+}
+
+.authForm .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(15, 23, 42, 0.3) !important;
+}
+
+.authForm .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #ff9839 !important;
+}
+
+.authForm .MuiInputBase-input::placeholder {
+  color: rgba(17, 24, 39, 0.6);
+  opacity: 1;
+}
+
+.authForm .MuiFormHelperText-root {
+  color: rgba(17, 24, 39, 0.7);
+}
+
+.authPanel .MuiButton-root {
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 900px) {
+  .landingMainContainer,
+  .meetContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .landingMainContainer > div:nth-child(1),
+  .leftPanel {
+    max-width: 100%;
+  }
+
+  .joinActions {
+    justify-content: center;
+  }
+
+  .navBar {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+}
+/* Lobby Page */
+
+.lobbyPage {
+    min-height: 100vh;
+    background: linear-gradient(
+        180deg,
+        #566eab 0%,
+        #213364 45%,
+        #07112b 100%
+    );
+    color: white;
+    padding: 40px;
+}
+
+.lobbyPage h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+/* Username field */
+
+.lobbyPage .MuiInputLabel-root {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.lobbyPage .MuiInputLabel-root.Mui-focused {
+    color: #ff9839;
+}
+
+.lobbyPage .MuiOutlinedInput-root {
+    color: white;
+    background: rgba(221, 158, 246, 0.05);
+    border-radius: 10px;
+}
+
+.lobbyPage .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.lobbyPage .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Connect button */
+
+.lobbyPage .MuiButton-root {
+    background: linear-gradient(90deg, #ff9839, #ff6a3d);
+    color: white;
+    border-radius: 10px;
+    padding: 11px 22px;
+    margin-left: 12px;
+    font-weight: 700;
+}
+
+.lobbyPage .MuiButton-root:hover {
+    background: linear-gradient(90deg, #ff8a24, #ff5735);
+}
