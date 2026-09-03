@@ -1,53 +1,57 @@
-# Zoom — Video Calling Web Application
+# 🎥 DevHub Meet
 
-A real-time video calling web application that allows users to join virtual meetings using a unique meeting room and communicate through live video and audio.
+> A full-stack web-based video conferencing application for real-time meetings and online collaboration.
 
-## Overview
+## 📌 About the Project
 
-This project is a full-stack video conferencing application built with React and Node.js. It provides a simple interface for entering a meeting, connecting with other participants, and communicating through real-time video and audio.
+DevHub Meet is a video conferencing web application that enables users to join virtual meetings directly from their browser.
 
-The application is designed with a clean, responsive interface and focuses on providing a smooth meeting experience.
+The application provides real-time audio and video communication along with screen sharing, meeting rooms, authentication, and meeting history through a clean and responsive interface.
 
-## Features
+## ✨ Features
 
-- 🎥 Real-time video calling
-- 🎙️ Audio communication
-- 👤 Username-based meeting entry
-- 🔗 Meeting room support
-- 🖥️ Screen sharing
-- 📹 Live camera preview before joining
-- 🕘 Meeting history
-- 🔐 User authentication
-- 📱 Responsive user interface
-- ⚡ Real-time communication
-- 🎨 Modern themed UI
+- 🔐 User Authentication
+- 🎥 Real-time Video Calling
+- 🎙️ Audio Controls
+- 🖥️ Screen Sharing
+- 👥 Meeting Rooms
+- 📹 Camera Preview Before Joining
+- 💬 Real-time Communication
+- 🕘 Meeting History
+- 📱 Responsive User Interface
+- ⚡ Real-time Meeting Experience
 
-## Tech Stack
+## 🛠️ Technologies Used
 
 ### Frontend
 
 - React.js
 - JavaScript
+- HTML5
+- CSS3
 - Material UI
-- CSS
-- WebRTC
 
 ### Backend
 
 - Node.js
 - Express.js
-- Socket.IO
 
-### Development Tools
+### Real-Time Communication
 
+- WebRTC
+- Socket-based communication
+
+### Tools
+
+- Git
+- GitHub
 - Visual Studio Code
-- Git & GitHub
 - npm
 
-## Project Structure
+## 🏗️ Project Structure
 
 ```text
-Zoom/
+Devhub-Meet/
 │
 ├── backend/
 │   ├── src/
@@ -60,10 +64,16 @@ Zoom/
 │   │   ├── components/
 │   │   ├── contexts/
 │   │   ├── pages/
-│   │   ├── styles/
+│   │   │   ├── authentication.jsx
+│   │   │   ├── history.jsx
+│   │   │   ├── home.jsx
+│   │   │   ├── landing.jsx
+│   │   │   └── VideoMeet.jsx
+│   │   ├── utils/
 │   │   ├── App.js
 │   │   └── App.css
-│   ├── package.json
-│   └── ...
+│   │
+│   └── package.json
 │
+├── .gitignore
 └── README.md
