@@ -77,8 +77,8 @@ Devhub-Meet/
 │
 ├── .gitignore
 └── README.md
+##🚀 Getting Started
 
-🚀 Getting Started
 Prerequisites
 
 Make sure you have the following installed:
