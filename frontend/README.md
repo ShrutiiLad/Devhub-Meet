@@ -77,3 +77,37 @@ Devhub-Meet/
 │
 ├── .gitignore
 └── README.md
+
+🚀 Getting Started
+Prerequisites
+
+Make sure you have the following installed:
+
+Node.js
+npm
+Git
+1. Clone the repository
+git clone https://github.com/ShrutiiLad/Devhub-Meet.git
+2. Navigate to the project
+cd Devhub-Meet
+3. Install backend dependencies
+cd backend
+npm install
+
+Start the backend:
+
+npm run dev
+4. Install frontend dependencies
+
+Open a new terminal:
+
+cd frontend
+npm install
+
+Start the React application:
+
+npm start
+
+The application will normally be available at:
+
+http://localhost:3000
